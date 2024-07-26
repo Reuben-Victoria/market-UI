@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
+import { RouterLink } from "vue-router";
 import Card from "./Card.vue";
 
 defineProps({
@@ -31,12 +32,12 @@ defineProps({
             {{ title }}
           </h2>
           <p class="mt-2 mb-2">{{ subtitle }}</p>
-          <a
-            href=""
+          <RouterLink
+            to="/jobs"
             class="inline-block bg-black hover:text-white text-white rounded-lg px-4 py-2 hover:bg-gray-700"
           >
             Browse Jobs
-          </a>
+          </RouterLink>
         </Card>
 
         <Card bg="bg-green-100">
@@ -46,12 +47,12 @@ defineProps({
           <p class="mt-2 mb-2">
             List your jobs to find the perfect developer for the role
           </p>
-          <a
-            href=""
+          <RouterLink
+            to="job/add"
             class="inline-block bg-green-500 hover:text-white text-white rounded-lg px-4 py-2 hover:bg-green-600"
           >
             Add Job
-          </a>
+          </RouterLink>
         </Card>
       </div>
     </div>

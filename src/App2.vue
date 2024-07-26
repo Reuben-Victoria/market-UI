@@ -53,7 +53,7 @@ onMounted(async () => {
   <Navbar />
   <RouterView />
 
-  <h1>{{ name }}</h1>
+  <!-- <h1>{{ name }}</h1>
   <p v-if="status === 'active'">Status is Active</p>
   <p v-else-if="status === 'pending'">Status is Pending</p>
   <form @submit.prevent="addTask">
@@ -68,5 +68,5 @@ onMounted(async () => {
       <button @click="deleteTask(index)">Delete</button>
     </li>
   </ul>
-  <button @click="toggleStatus">Change Status</button>
+  <button @click="toggleStatus">Change Status</button> -->
 </template>
